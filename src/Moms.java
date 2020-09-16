@@ -13,8 +13,8 @@ public class Moms {
 
         double moms = koebmaengde * 0.25;
         double tyskmoms = koebmaengde * 0.16;
-        System.out.println("Dansk salgs moms er: " + (int)(plusDanskMoms(moms)) + " kroner");
-        System.out.println("Tysk salgs-moms er: " + (int)(plusTyskmoms(tyskmoms)) + " euro");
+        System.out.println("Dansk salgs moms er: " + (int)(plusDanskMoms(moms * 100) / 100) + " kroner");
+        System.out.println("Tysk salgs-moms er: " + (int)(plusTyskmoms(tyskmoms * 100) / 100) + " euro");
     }
     /*
        Additionally, we could separate our moms method and make it independant.
